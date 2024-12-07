@@ -39,11 +39,11 @@ export default function Homepage() {
           headers: {
             'Content-Type': 'application/json',
           },
-          credentials: 'include', // Ensures cookies (like session) are sent with the request
+          credentials: 'include', 
         });
         if (response.ok) {
           const data = await response.json();
-          setSelectedSkinType(data.skin_type || "Not Specified"); // Correcting the field to 'skin_type'
+          setSelectedSkinType(data.skin_type || "Not Specified"); 
         } else {
           console.error("Failed to fetch skin type");
         }
@@ -67,6 +67,8 @@ export default function Homepage() {
     }
   
     try {
+      console.log("this is the api url", apiUrl);
+      console.log("this is the selected skin type", selectedSkinType);
       const response = await fetch(apiUrl + `/${selectedSkinType}/`, {
         method: 'POST',
         credentials: 'include',
