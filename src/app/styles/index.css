@@ -1,0 +1,87 @@
+h1 {
+  color: #FEF5FF;
+  -webkit-text-stroke: 6px #EA00FF;
+  font-family: 'Inter', sans-serif;
+  font-size: 180px;
+  font-weight: 800;
+}
+
+h4 {
+  font-family: 'Inter', sans-serif;
+}
+
+.start-button {
+  margin: 0 3px 2em 0;
+  font-weight: 600;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  border: 3.5px solid #AA00FF;
+  background-color: #FEF5FF;
+  color: #AA00FF;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  border-radius: 1.2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.start-button:hover {
+  background-color: #cd6aff;
+}
+
+.start-button img {
+  margin-right: 3px;
+  width: 50px;
+  height: 50px;
+}
+
+/* theme changed styles */
+.theme-changed h1 {
+  color: #F4FDFF;
+  -webkit-text-stroke: 6px #0077B6;
+}
+
+.theme-changed .start-button {
+  border-color: #03045E;
+  background-color: #F4FDFF;
+  color: #03045E;
+
+}
+
+.theme-changed .start-button:hover {
+  background-color: rgb(168, 201, 220);
+}
+
+.theme-button {
+  color: white;
+  padding: 8px 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  background-repeat: repeat-x;
+  background-position: 0 -400%;
+  transition: background-position 1s, background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+
+.theme-button:hover {
+  background-position: 1000% 100%;
+}
+
+.dark-theme {
+  background-color: #00B4D8;
+  border: 3px solid #03045E;
+  background-image: url('/wave2.png');
+  cursor: url('/select2.png'), pointer;
+}
+
+.light-theme {
+  background-color: #FFAADF;
+  border: 3px solid #AA00FF;
+  background-image: url('/wave1.png');
+  cursor: url('/select1.png'), pointer;
+}
+
