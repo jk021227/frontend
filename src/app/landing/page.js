@@ -69,7 +69,7 @@ export default function Homepage() {
     try {
       console.log("this is the api url", apiUrl);
       console.log("this is the selected skin type", selectedSkinType);
-      const response = await fetch(apiUrl + `/${selectedSkinType}/`, {
+      const response = await fetch(apiUrl + `/${selectedSkinType}`, {
         method: 'POST',
         credentials: 'include',
         headers: {
