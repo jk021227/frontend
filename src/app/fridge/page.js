@@ -212,7 +212,7 @@ export default function Fridge() {
   };
     
     const handleDeleteProduct = (productId, day) => {
-        fetch(apiUrl + `/${day}/products/${productId}/`, {
+        fetch(apiUrl + `/${day}/products/${productId}`, {
             method: 'DELETE',
             credentials: 'include'
         })
