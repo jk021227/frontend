@@ -3,7 +3,7 @@
 //     frontendUrl: "https://legally-chemie.vercel.app/",
 // };
 export default {
-    apiUrl: "http://localhost:8000",   
-    frontendUrl: "http://localhost:3000",
+    apiUrl: "https://sea-turtle-app-akcpx.ondigitalocean.app/",   
+    frontendUrl: "https://lionfish-app-hldzt.ondigitalocean.app/",
 };
 // NOTE: BACKEND URLS ARE HARDCODED IN THE backend/server.py file
