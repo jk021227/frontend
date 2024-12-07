@@ -15,6 +15,7 @@ import React, { useEffect, useState } from 'react';
 import config from "../config.js";
 
 const apiUrl = config.apiUrl; 
+console.log(apiUrl);
 const frontendUrl = config.frontendUrl;
 
 /**
@@ -36,9 +37,12 @@ function Nav({ name, banner, isThemeChanged }) {
    */
 
   const handleBack = () => {
-    if (typeof window !== 'undefined') { // check if window is defined
-      window.history.back();
-
+    if (typeof window !== 'undefined') {
+      if (window.location.pathname.includes('landing')) {
+        window.location.href = `${apiUrl}/logout`;
+      } else {
+        window.history.back();
+      }
     }
   };
 
