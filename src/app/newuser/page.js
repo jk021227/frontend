@@ -62,7 +62,7 @@ export default function NewUser() {
       What is your skin type?
       </h1>
       <div className="choice-container">
-        {["Dry", "Oily", "Normal" ,"Combination", "Sensitive"].map((type) => (
+        {["dry", "oily", "normal" ,"combination", "sensitive"].map((type) => (
           <label key={type} className="label-large">
             <input
               type="radio"
