@@ -19,7 +19,7 @@ export default function Homepage() {
   const [previousSkinType, setPreviousSkinType] = useState(selectedSkinType);
 
   
-  const skinTypes = ["Dry", "Oily", "Normal" ,"Combination", "Sensitive"];
+  const skinTypes = ["dry", "oily", "normal" ,"combination", "sensitive"];
 
   useEffect(() => {
     const themeFromStorage = localStorage.getItem("theme");
